@@ -7,24 +7,33 @@ This repository houses the frontend composition of the Epicenter Estimation Proj
 -Create host file for every ticket(e.g. pagsubay-#26-repoSetup)
 
 ## Cloning process:
--> Copy repo link -> VC Code -> Open Ticket host file -> Terminal -> run command "git clone (repo link)" -> cd pagsubay-frontend -> npm i
+-> Copy repo link -> VS Code -> Open Ticket host file -> Terminal -> run command "git clone (repo link)" -> cd pagsubay-frontend -> npm i
 
 ## Branch naming:
 Feat: features that you've added to the porject
+<br>
 Chore: Tasks that you've done for the project 
+<br>
 Fix: bug fixes or for QA tickets
+<br>
 Refactor: Code improvements and feature fixing
 
 e.g. 
 feat/1--repoSetup
+<br>
 chore/1--changedTheBackgroundColor
+<br>
 fix/1--fixedImageAlignment
+<br>
 refactor/1--improvedLandingPageResponsiveness
 
 ## Commit messages:
 feat: commit message
+<br>
 fix: commit message
+<br>
 refactor: commit message
+<br>
 chore: commit message
 
 ## Commits Guidelines:
