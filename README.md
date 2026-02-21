@@ -2,12 +2,12 @@
 This repository houses the frontend composition of the Epicenter Estimation Project created by the Pagsubay Research Team
 
 ## File structure:
--Create main folder in your device(pagsubay-frontend)
+-Create main folder in your device (pagsubay-frontend)
 <br>
--Create host file for every ticket(e.g. pagsubay-#26-repoSetup)
+-Create host file for every ticket (e.g. pagsubay-#26-repoSetup)
 
 ## Cloning process:
--> Copy repo link -> VS Code -> Open Ticket host file -> Terminal -> run command "git clone https://github.com/pagsubayresearch25/pagsubay-frontend.git" -> cd pagsubay-frontend -> npm i
+-> Copy repo link <br> -> VS Code <br> -> Open Ticket host file <br> -> Terminal <br> -> run command "git clone https://github.com/pagsubayresearch25/pagsubay-frontend.git" <br> -> cd pagsubay-frontend <br> -> npm i
 
 ## How to run: 
 cd pagsubay-frontend
