@@ -44,7 +44,6 @@ Always start the commit message with a verb:
 ## feat: Add/Change/Made/Remove something
 
 ## Pull Requersts Format:
-<br>
 Feature:
 <br>
 -Description
