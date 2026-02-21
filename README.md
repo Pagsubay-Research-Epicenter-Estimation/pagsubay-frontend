@@ -19,6 +19,7 @@ Fix: bug fixes or for QA tickets
 Refactor: Code improvements and feature fixing
 
 e.g. 
+<br>
 feat/1--repoSetup
 <br>
 chore/1--changedTheBackgroundColor
@@ -43,11 +44,17 @@ Always start the commit message with a verb:
 ## feat: Add/Change/Made/Remove something
 
 ## Pull Requersts Format:
+<br>
 Feature:
+<br>
 -Description
+<br>
 -Description
+<br>
 -Description
+<br>
 Image(screenshot both desktop & mobile if necessary):
+<br>
 Ticket link: 
 
 
