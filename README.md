@@ -6,7 +6,7 @@ This repository houses the frontend composition of the Epicenter Estimation Proj
 
 -Create main folder in your device (pagsubay-frontend)
 <br>
--Create host file for every ticket (e.g. pagsubay-#26-repoSetup)
+-Create host file for every ticket (e.g. pagsubay-26-repoSetup)
 
 ## Cloning process:
 
