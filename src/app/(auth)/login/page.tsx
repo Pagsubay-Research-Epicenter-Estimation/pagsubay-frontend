@@ -4,6 +4,7 @@ import { useState } from "react";
 import { HiOutlineUser, HiOutlineLockClosed } from "react-icons/hi2";
 import { HiEye, HiEyeOff } from "react-icons/hi";
 import { emailChecker, passwordChecker } from "@/lib/zod/emailChecker";
+import PhivolcsLogo from "@/components/shared/phivolcslogo";
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -49,6 +50,8 @@ export default function LoginPage() {
         </div>
 
         <div className="w-1/2 h-full flex flex-col items-center justify-center bg-pagsubay-slate-100 px-12">
+          {/* This is the Phivolcs Logo but it is not in the proper location yet */}
+          <PhivolcsLogo variant="with-text" size="h-24" className="mb-6" />
           <h1 className="text-3xl font-bold text-pagsubay-sky-700 text-center uppercase leading-tight">
             Lorem Ipsum Dolor Lorem Ipsum
           </h1>
