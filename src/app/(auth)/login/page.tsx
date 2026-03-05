@@ -7,7 +7,7 @@ import { emailChecker, passwordChecker } from "@/lib/zod/emailChecker";
 import PhivolcsLogo from "@/components/shared/phivolcslogo";
 
 export default function LoginPage() {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState<{ email?: string; password?: string }>(
@@ -31,7 +31,7 @@ export default function LoginPage() {
 
   return (
     <div className="flex h-screen items-center justify-center bg-linear-to-r from-pagsubay-sky-400 via-pagsubay-sky-500 to-pagsubay-sky-700">
-      <div className="flex h-160 w-280 bg-white rounded-4xl shadow-lg overflow-hidden">
+      <div className="flex h-150 w-270 bg-white rounded-4xl shadow-lg overflow-hidden">
         <div className="relative w-1/2 h-full">
           <Image
             src="/loginPage_background.png"
@@ -49,13 +49,17 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <div className="w-1/2 h-full flex flex-col items-center justify-center bg-pagsubay-slate-100 px-12">
+        <div className="w-1/2 h-full  flex flex-col items-center justify-center bg-pagsubay-slate-100 relative px-12">
           {/* This is the Phivolcs Logo but it is not in the proper location yet */}
-          <PhivolcsLogo variant="with-text" size="h-24" className="mb-6" />
-          <h1 className="text-3xl font-bold text-pagsubay-sky-700 text-center uppercase leading-tight">
+          <PhivolcsLogo
+            variant="with-text"
+            size="h-14"
+            className="mb-6 absolute top-8 right-8"
+          />
+          <h1 className="text-3xl font-bold text-pagsubay-sky-800 text-center uppercase leading-tight">
             Lorem Ipsum Dolor Lorem Ipsum
           </h1>
-          <p className="text-pagsubay-slate-500 text-sm mt-2 mb-8">
+          <p className="text-pagsubay-sky-700 text-sm mt-2 mb-8">
             lorem ipsum dolor sit amet consectetur
           </p>
 
@@ -79,6 +83,7 @@ export default function LoginPage() {
               <div className="flex items-center gap-3 bg-white rounded-sm px-3 py-2 border-2 border-pagsubay-slate-200 shadow-lg">
                 <HiOutlineLockClosed className="h-5 w-5 text-pagsubay-slate-600" />
                 <input
+                  type={showPassword ? "text" : "password"}
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -116,7 +121,7 @@ export default function LoginPage() {
 
             <button
               type="submit"
-              className="w-full mt-4 cursor-pointer bg-pagsubay-sky-700 hover:bg-pagsubay-sky-600 text-white font-semibold py-2 rounded-md transition-colors"
+              className="w-full mt-8 cursor-pointer bg-pagsubay-sky-700 hover:bg-pagsubay-sky-600 text-white font-semibold py-2 rounded-md transition-colors"
             >
               Login
             </button>
