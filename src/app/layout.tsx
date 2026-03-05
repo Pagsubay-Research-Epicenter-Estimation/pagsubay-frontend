@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
+import { ReactQueryClientProvider } from "@/lib/react-query/react-query";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,12 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pagsubay.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ReactQueryClientProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} ${pagsubay.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
+    </ReactQueryClientProvider>
   );
 }
